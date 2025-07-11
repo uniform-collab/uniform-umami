@@ -21,6 +21,14 @@
         "url": "/project-tool",
         "iconUrl": "http://localhost:9000/umami-logo.svg"
       }
+    ],
+    "dashboardTools": [
+      {
+        "id": "umami",
+        "name": "Umami Analytics (dev)",
+        "url": "/project-tool",
+        "iconUrl": "http://localhost:9000/umami-logo.svg"
+      }
     ]
   }
 }

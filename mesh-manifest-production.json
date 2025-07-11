@@ -22,6 +22,14 @@
         "url": "/project-tool",
         "iconUrl": "https://uniform-umami.vercel.app/umami-logo.svg"
       }
+    ],
+    "dashboardTools": [
+      {
+        "id": "umami",
+        "name": "Umami Analytics",
+        "url": "/project-tool",
+        "iconUrl": "https://uniform-umami.vercel.app/umami-logo.svg"
+      }
     ]
   }
 }
