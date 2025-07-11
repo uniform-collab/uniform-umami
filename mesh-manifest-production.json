@@ -1,9 +1,10 @@
 {
   "type": "uniform-umami",
   "displayName": "Uniform Umami",
-  "baseLocationUrl": "https://umami.is/dashboard",
-  "logoIconUrl": "/umami-logo.svg",
-  "badgeIconUrl": "/umami-logo.svg",
+  "logoIconUrl": "https://uniform-umami.vercel.app/umami-logo.svg",
+  "badgeIconUrl": "https://uniform-umami.vercel.app/umami-logo.svg",
+  "category": "unknown",
+  "baseLocationUrl": "https://uniform-umami.vercel.app",
   "locations": {
     "install": {
       "description": [
@@ -11,16 +12,16 @@
       ],
       "informationUrl": "https://umami.is/"
     },
+    "settings": {
+      "url": "/settings"
+    },
     "projectTools": [
       {
         "id": "umami",
         "name": "Umami Analytics",
         "url": "/project-tool",
-        "iconUrl": "/umami-logo.svg"
+        "iconUrl": "https://uniform-umami.vercel.app/umami-logo.svg"
       }
-    ],
-    "settings": {
-      "url": "/settings"
-    }
+    ]
   }
 }
