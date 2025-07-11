@@ -1,0 +1,15 @@
+---
+alwaysApply: false
+---
+
+# Project brief
+
+
+This is a Uniform integration for the [Umami analytics tool](https://umami.is/).
+
+The starting point is a different integration `uniform-storybook-explorer` which needs to be rewritten to the new integration
+
+## Functionality
+
+* Show an iframe embed of the Umami analytics dashboard as a project tool
+

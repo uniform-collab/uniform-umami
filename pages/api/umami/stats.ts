@@ -1,0 +1,26 @@
+import type { NextApiRequest, NextApiResponse } from "next";
+import { getUmamiClient } from "../../../lib/umamiClient";
+
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
+  const siteId = process.env.UMAMI_SITE_ID;
+  if (!siteId) {
+    return res.status(500).json({ error: "Umami site ID is not set." });
+  }
+  try {
+    const client = getUmamiClient();
+    const endAt = req.query.endAt ? Number(req.query.endAt) : Date.now();
+    const startAt = req.query.startAt
+      ? Number(req.query.startAt)
+      : endAt - 30 * 24 * 60 * 60 * 1000;
+    const data = await client.getWebsiteStats(siteId, {
+      startAt,
+      endAt,
+    });
+    return res.status(200).json(data);
+  } catch (err: any) {
+    return res.status(500).json({ error: err.message || "Unknown error" });
+  }
+}

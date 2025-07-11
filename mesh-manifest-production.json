@@ -1,0 +1,26 @@
+{
+  "type": "uniform-umami",
+  "displayName": "Uniform Umami",
+  "baseLocationUrl": "https://umami.is/dashboard",
+  "logoIconUrl": "/umami-logo.svg",
+  "badgeIconUrl": "/umami-logo.svg",
+  "locations": {
+    "install": {
+      "description": [
+        "Embed and explore an Umami analytics dashboard in your Uniform project"
+      ],
+      "informationUrl": "https://umami.is/"
+    },
+    "projectTools": [
+      {
+        "id": "umami",
+        "name": "Umami Analytics",
+        "url": "/project-tool",
+        "iconUrl": "/umami-logo.svg"
+      }
+    ],
+    "settings": {
+      "url": "/settings"
+    }
+  }
+}
